@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<script src="graph.js"></script>
+		<style>
+			* {
+				box-sizing: border-box;
+				margin: 0;
+				border: 0;
+				padding: 0;
+			}
+			
+			img {
+				display: inline-block;
+			}
+			
+			a {
+				cursor: pointer;
+			}
+			
+			#map {
+				width: 75%;
+			}
+			
+			#graph {
+				width: 20%;
+			}
+			
+			#wrapper {
+				position: relative;
+			}
+			
+			#labels {
+				position: absolute;
+				top: 17.6%;
+				left: 64%;
+			}
+			
+			#labels a {
+				display: block;
+				width: 55%;
+				margin-bottom: 3.3%;
+				text-indent: 100%;
+				white-space: nowrap;
+				overflow: hidden;
+			}
+			
+			.doubleHeight {
+				height: 34px;
+			}
+		</style>
+	</head>
+	<body>
+		<div>
+			<a id="graph1" class="graphPopup" data-graph="eastern-bering-sea.jpg">Graph 1</a>
+			<a id="graph2" class="graphPopup" data-graph="gulf-of-alaska.jpg">Graph 2</a>
+			<a id="graph3" class="graphPopup" data-graph="hawaiian-islands.jpg">Graph 3</a>
+			<a id="graph4" class="graphPopup" data-graph="california-current.jpg">Graph 4</a>
+			<a id="graph5" class="graphPopup" data-graph="gulf-of-mexico.jpg">Graph 5</a>
+			<a id="graph6" class="graphPopup" data-graph="southeastern-us-continental-shelf.jpg">Graph 6</a>
+			<a id="graph7" class="graphPopup" data-graph="northeastern-us-continental-shelf.jpg">Graph 7</a>
+			<a id="graph8" class="graphPopup" data-graph="scotian-shelf.jpg">Graph 8</a>
+			<a id="graph9" class="graphPopup" data-graph="labrador-shelf.jpg">Graph 9</a>
+		</div>
+		
+		<div id="wrapper">
+			<img id="map" src="map.jpg">
+			<img id="graph" src="eastern-bering-sea.jpg">
+			<div id="labels">
+				<a class="graphPopup mapLabel" data-graph="eastern-bering-sea.jpg">Eastern Bering Sea</a>
+				<a class="graphPopup mapLabel" data-graph="gulf-of-alaska.jpg">Gulf of Alaska</a>
+				<a class="graphPopup mapLabel" data-graph="hawaiian-islands.jpg">Hawaiian Islands</a>
+				<a class="graphPopup mapLabel" data-graph="california-current.jpg">California Coast</a>
+				<a class="graphPopup mapLabel" data-graph="gulf-of-mexico.jpg">Gulf of Mexico</a>
+				<a class="graphPopup mapLabel doubleHeight" data-graph="southeastern-us-continental-shelf.jpg">Southeastern U.S. Continental Shelf</a>
+				<a class="graphPopup mapLabel doubleHeight" data-graph="northeastern-us-continental-shelf.jpg">Northeastern U.S. Continental Shelf</a>
+				<a class="graphPopup mapLabel" data-graph="scotian-shelf.jpg">Scotian Shelf</a>
+				<a class="graphPopup mapLabel" data-graph="labrador-shelf.jpg">Labrador Shelf</a>
+			</div>
+		</div>
+	</body>
+</html>
