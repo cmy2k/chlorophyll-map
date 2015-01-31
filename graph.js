@@ -4,6 +4,7 @@ function main() {
 	
 	for (i = 0; i < targets.length; i++) {
 		targets[i].addEventListener("mouseenter", displayGraph, false);
+		targets[i].addEventListener("mouseenter", handleOutline, false);
 	}
 }
 
@@ -12,6 +13,12 @@ function displayGraph() {
 	 var graphSrc = this.getAttribute("data-graph");
 	 
 	 graphElem.src = graphSrc;
+}
+
+function handleOutline() {
+	var prevElem = document.getElementsByClassName("graphActive")[0];
+	prevElem.classList.remove("graphActive");
+	this.classList.add("graphActive");
 }
 
 window.onload = main;
