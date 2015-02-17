@@ -41,7 +41,7 @@
       }
 
       .graphPopup.graphActive {
-        stroke: rgb(0,0,0);
+        stroke: rgba(0,0,0,0.95);
       }
     </style>
   </head>
@@ -57,7 +57,7 @@
 							   0 1 0 0 1
 							   0 0 1 0 1
 							   0 0 0 1 0" type="matrix" in="SourceGraphic" result="borderOut"></feColorMatrix>
-        <feGaussianBlur result="blurOut" in="borderOut" stdDeviation="3"></feGaussianBlur>
+        <feGaussianBlur result="blurOut" in="borderOut" stdDeviation="4"></feGaussianBlur>
         <feBlend in="SourceGraphic" in2="blurOut" mode="normal"></feBlend>
     </filter>
 	<!-- svg generated using QGIS www.qgis.org -->
