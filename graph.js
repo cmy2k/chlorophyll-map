@@ -1,24 +1,26 @@
 function main() {
-	var targets = document.getElementsByClassName("graphPopup");
-	var i;
+  var targets = document.getElementsByClassName("graphPopup");
+  var i;
 	
-	for (i = 0; i < targets.length; i++) {
-		targets[i].addEventListener("mouseenter", displayGraph, false);
-		targets[i].addEventListener("mouseenter", handleOutline, false);
-	}
+  for (i = 0; i < targets.length; i++) {
+    targets[i].addEventListener("mouseenter", displayGraph, false);
+    targets[i].addEventListener("mouseenter", handleOutline, false);
+  }
 }
 
 function displayGraph() {
-     var graphElem = document.getElementById("graph");
-	 var graphSrc = this.getAttribute("data-graph");
+  var graphElem = document.getElementById("graph");
+  var graphSrc = this.getAttribute("data-graph");
+
+  console.log(graphSrc)
 	 
-	 graphElem.src = graphSrc;
+  graphElem.src = graphSrc;
 }
 
 function handleOutline() {
-	var prevElem = document.getElementsByClassName("graphActive")[0];
-	prevElem.classList.remove("graphActive");
-	this.classList.add("graphActive");
+  var prevElem = document.getElementsByClassName("graphActive")[0];
+  prevElem.classList.remove("graphActive");
+  this.classList.add("graphActive");
 }
 
 window.onload = main;
