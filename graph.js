@@ -5,6 +5,8 @@ function main() {
   for (i = 0; i < targets.length; i++) {
     targets[i].addEventListener("mouseenter", displayGraph, false);
     targets[i].addEventListener("mouseenter", handleOutline, false);
+    targets[i].addEventListener("touchstart", displayGraph, false);
+    targets[i].addEventListener("touchstart", handleOutline, false);
   }
 }
 
