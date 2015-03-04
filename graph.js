@@ -12,8 +12,6 @@ function displayGraph() {
   var graphElem = document.getElementById("graph");
   var graphSrc = this.getAttribute("data-graph");
 
-  console.log(graphSrc)
-	 
   graphElem.src = graphSrc;
 }
 
