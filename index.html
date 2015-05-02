@@ -20,9 +20,14 @@
     width: 63%;
   }
 
-  #graph {
+  .graph-wrapper {
+    display: inline-block;
     margin-top: 8.9%;
     width: 32%;
+  }
+
+  .graph-wrapper img {
+    max-width: 100%;
   }
 
   #wrapper {
@@ -48,8 +53,11 @@
 <body>
   <div id="wrapper">
     <img id="map" src="maps/map-compressed.jpg">
-    <img id="graph" src="graphs/NE_SS.jpg">
-    <?xml version="1.0" standalone="no"?>
+	<div class="graph-wrapper">
+      <img id="graph" src="graphs/NE_SS.jpg">
+	  <img src="graphs/legend.jpg">
+    </div>
+	<?xml version="1.0" standalone="no"?>
     <!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
     <svg id="coastal_svg" xmlns="http://www.w3.org/2000/svg" xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox = "0 0 1014 539" version = "1.1">
       <filter id="chlorophyll-border" width="150%" height="150%">
